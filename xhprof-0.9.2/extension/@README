@@ -1,0 +1,17 @@
+2013-02-22 - AR.
+----------------------------------------------------------------
+
+Disabled sched_setaffinity calls, not in my version of glibc.
+Timings may be off because of it.
+
+Also, fixed a couple of invalid-C syntax errors (var not declared at top of func)
+in xhprof.c
+
+configure with
+ ./configure --with-php-config=/y/src/php-5.2.5/scripts/php-config
+
+build with
+ make
+
+clean up with
+ make distclean
